@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJ PENOS - Links</title>
+    <link rel="stylesheet" href="./app.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          color1: "#576F72",
+          color2: "#7D9D9C",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0,
+          quantity: 4,
+        });
+
+        setTimeout(() => {
+          let el = document.querySelector("#main");
+          el.style.opacity = 1;
+          el.style.filter = "blur(0px)";
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <div id="main">
+      <header>
+        <img src="./images/profile.jpg" alt="profile-img" />
+        <h1>@Sleepingburger</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://github.com/sleepingburger"
+            ><img
+              src="./images/homepage.svg"
+              alt="website"
+              width="25"
+            />Official Website</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/sleepingburger"
+            ><img src="./images/github.svg" alt="github" width="25" />Github</a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/ajrpbogi"
+            ><img
+              src="./images/twitter.svg"
+              alt="twitter"
+              width="25"
+            />Twitter</a
+          >
+        </li>
+        <li>
+          <a href="https://instagram.com/jab3tic">
+            <img
+              src="./images/instagram.svg"
+              alt="instagram"
+              width="25"
+            />Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
